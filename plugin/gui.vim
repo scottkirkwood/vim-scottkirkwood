@@ -6,7 +6,8 @@
 set hlsearch
 
 " Escape will also remove highlighting
-nnoremap <ESC> :nohlsearch<CR><ESC>
+" use :noh  this causes problems on the first keystroke
+" nnoremap <ESC> :nohlsearch<CR><ESC>
 
 " Color syntax highlighting on
 syntax on
