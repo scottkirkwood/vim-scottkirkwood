@@ -44,6 +44,10 @@ let g:snips_author = 'Scott Kirkwood'
 let g:snips_email = 'scottkirkwood@google.com'
 let g:snips_ldap = 'scottkirkwood'
 
+let g:UltiSnipsExpandTrigger = '<c-j>'
+
+let g:ycm_confirm_extra_conf = 0
+
 " Default supertab to use completion
 " let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 
