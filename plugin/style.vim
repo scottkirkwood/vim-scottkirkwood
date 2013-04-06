@@ -3,7 +3,7 @@
 " -----------------------------
 
 " was 100 character line width
-set textwidth=100
+set textwidth=80
 
 " I don't like indenting after the parenthesis, this removes it.
 setlocal cinoptions+=W2s
@@ -64,4 +64,3 @@ vnoremap <leader>c <C-O>:s/_\([a-z]\)/\u\1/g<CR>gUl
 
 " Change CamelCase to name_with_underscore for visually selected text.
 vnoremap <leader>u <C-O>:s/\<\@!\([A-Z]\)/\_\l\1/g<CR>gul
-

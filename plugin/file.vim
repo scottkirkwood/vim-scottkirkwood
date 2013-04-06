@@ -15,6 +15,7 @@ set autochdir
 " Save temp files here instead of all over the place.
 " May need to run mkdir -p /var/tmp/${USER}/vim
 set dir=/var/tmp/${USER}/vim/
+set undodir=/var/tmp/${USER}/vim/
 
 " Save all when focus is lost
 " Run :autocmd! FocusLost to remove if running through ssh
