@@ -1,0 +1,35 @@
+# snippets for C files.
+
+snippet copy "Copyright" b
+// Copyright `!v strftime("%Y")` Google Inc. All Rights Reserved.
+
+endsnippet
+
+snippet todo "Todo" b
+// TODO(`!v g:snips_ldap`): ${0:Description}
+endsnippet
+
+snippet todo "Todo inline"
+TODO(`!v g:snips_ldap`): ${0:Description}
+endsnippet
+
+snippet author "Author" b
+// Author: `!v g:snips_email` (`!v g:snips_author`)
+endsnippet
+
+snippet namespace "Namespace" b
+namespace ${1:namespace} {
+$0;
+}  // namespace $1
+endsnippet
+
+snippet class "Class" b
+class ${1:ClassName} {
+ public:
+   $1();
+   virtual ~$1();
+
+ private:
+  DISALLOW_COPY_AND_ASSIGN($1);
+};
+endsnippet

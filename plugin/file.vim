@@ -2,6 +2,8 @@
 "    Directory/File Related
 " -----------------------------
 
+let g:loaded_sak_file = 1
+
 " make filename auto-complete work like bash
 set wildmode=longest:full
 set wildignore=*.swp,*.bak,*.pwc,*.class
@@ -12,6 +14,14 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 " Change to the directory the file in your current buffer is in
 set autochdir
 
+" Turn off the swapfile
+set noswapfile
+
+" Stop the warnings about open .swp files.
+" This doesn't seem to be picked up
+set shortmess+=A
+
+
 " Save temp files here instead of all over the place.
 " May need to run mkdir -p /var/tmp/${USER}/vim
 set dir=/var/tmp/${USER}/vim/
@@ -21,9 +31,6 @@ set undodir=/var/tmp/${USER}/vim/
 " Run :autocmd! FocusLost to remove if running through ssh
 autocmd FocusLost * :wa
 
-" Stop the warnings about open .swp files.
-set shortmess+=A
-
 " Always browse in the buffer's directory
 set browsedir=buffer
 
@@ -32,4 +39,3 @@ set spellfile=~/.spellfile.add
 
 " Hide the buffers instead of closing them
 set hidden
-
