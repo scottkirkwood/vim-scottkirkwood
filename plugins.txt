@@ -1,10 +1,13 @@
 Plugins Scott uses
 CamelCaseMotion: git://github.com/bkad/CamelCaseMotion.git
-ultisnips: https://github.com/SirVer/ultisnips
-vim-fugitive: git://github.com/tpope/vim-fugitive.git
+syntastic: git://github.com/scrooloose/syntastic.git
+ultisnips: git://github.com/SirVer/ultisnips.git
+vim-eighties: https://github.com/justincampbell/vim-eighties
 vim-multiple-cursors: https://github.com/terryma/vim-multiple-cursors.git
 vim-notes: https://github.com/xolox/vim-notes.git
 vim-scottkirkwood: git@github.com:scottkirkwood/vim-scottkirkwood.git
 vim-sensible: https://github.com/tpope/vim-sensible.git
 vim-unimpaired: https://github.com/tpope/vim-unimpaired.git
-vim-visual-star-search: git@github.com:bronson/vim-visual-star-search.git
+vim-visual-star-search: git://github.com/bronson/vim-visual-star-search.git
+vundle: https://github.com/gmarik/vundle.git
+YouCompleteMe: https://github.com/Valloric/YouCompleteMe.git
