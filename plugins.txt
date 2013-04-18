@@ -1,0 +1,10 @@
+Plugins Scott uses
+CamelCaseMotion: git@github.com:scottkirkwood/vim-scottkirkwood.git
+ultisnips: git://github.com/bkad/CamelCaseMotion.git
+vim-fugitive: https://github.com/SirVer/ultisnips
+vim-multiple-cursors: git://github.com/tpope/vim-fugitive.git
+vim-notes: https://github.com/terryma/vim-multiple-cursors.git
+vim-scottkirkwood: https://github.com/xolox/vim-notes.git
+vim-sensible: git@github.com:scottkirkwood/vim-scottkirkwood.git
+vim-unimpaired: https://github.com/tpope/vim-sensible.git
+vim-visual-star-search: https://github.com/tpope/vim-unimpaired.git
