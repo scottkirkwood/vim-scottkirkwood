@@ -11,8 +11,8 @@ do
   then
     dirname="${d##.*/}"
     echo "$dirname"
-    echo "$dirname: $(git remote -v | grep fetch | cut -f2 | cut -d' ' -f1)" >> $plugins_txt
     cd $d
+    echo "$dirname: $(git remote -v | grep fetch | cut -f2 | cut -d' ' -f1)" >> $plugins_txt
     echo "git pull"
     git pull
   fi
