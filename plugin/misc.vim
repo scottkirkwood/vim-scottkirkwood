@@ -65,3 +65,6 @@ let g:ycm_confirm_extra_conf = 0
 
 " My library for resolving merge conflicts.
 "source ~/bin/resolve_all.vim
+
+" DIFF
+
