@@ -1,15 +1,20 @@
-snippet can "Candidate"
-the candidate
-endsnippet
-
 snippet todo "Todo"
 TODO(scottkirkwood): 
+endsnippet
+
+snippet logsak
+LOG(INFO) << "sak: $0";
 endsnippet
 
 snippet author "Author"
 Author: scottkirkwood@google.com (Scott Kirkwood)
 endsnippet
 
-snippet logsak
-LOG(INFO) << "sak: $0";
+snippet ci "Inline comment"
+// ($0)
 endsnippet
+
+snippet cb "Bottom comment" b
+($1) $0
+endsnippet
+
