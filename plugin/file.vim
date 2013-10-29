@@ -11,6 +11,9 @@ set wildignore=*.swp,*.bak,*.pwc,*.class
 " Remember the last position
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
+" Resource any .vim files
+au BufWritePost *.vim source %
+
 " Change to the directory the file in your current buffer is in
 set autochdir
 

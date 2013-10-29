@@ -6,8 +6,9 @@
 set showtabline=2
 
 " New Tab (Ctrl-Shift-T)
-nnoremap <silent> <C-S-T> :tabnew<CR>
-inoremap <silent> <C-S-T> <C-O>:tabnew<CR>
+" Conflicts with easygoogle
+"nnoremap <silent> <C-S-T> :tabnew<CR>
+"inoremap <silent> <C-S-T> <C-O>:tabnew<CR>
 
 " When switching buffers, if it's already in a tab, use that one
 set switchbuf=usetab
