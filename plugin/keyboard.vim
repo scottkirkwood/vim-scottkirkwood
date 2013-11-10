@@ -2,10 +2,10 @@
 "    Carpel Tunnel Related
 " -----------------------------
 
-" Make the semicolon to be the same as full colon
-" If you need the semicolon, you can use a comma
-"noremap ; :
-"noremap , ;
+" Map semicolon to be colon
+" This means that we loose the semicolon which is used to 
+" repeat last ft command
+nnoremap ; :
 
 " Special leader character is the spacebar
 let mapleader=" "

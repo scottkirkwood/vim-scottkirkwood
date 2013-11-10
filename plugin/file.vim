@@ -37,8 +37,8 @@ autocmd FocusLost * :wa
 " Always browse in the buffer's directory
 set browsedir=buffer
 
-" Put spell check words in this file
-set spellfile=~/.spellfile.add
+" Put spell check words in this file.
+let spellfile=resolve(expand('%:p:h') . '/../spell/spellfile.add')
 
 " Hide the buffers instead of closing them
 set hidden

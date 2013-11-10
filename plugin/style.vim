@@ -33,19 +33,9 @@ set autowrite           " Write any changed buffers before make, etc.
 " Show nbsp and tabs as special chars, don't show EOL.
 set list listchars=tab:->,nbsp:%
 
-" Lines longer than textwidth get error color
-function! HighlightTooLongLines(linelength)
-  let &textwidth = a:linelength
-  highlight def link RightMargin Error
-  if &textwidth != 0
-    exec 'match RightMargin /\%<' . (&textwidth + 3) . 'v.\%>' . (&textwidth + 1) . 'v/'
-  endif
-endfunction
-
-augroup filetypedetect
-  au WinEnter,BufNewFile,BufRead *.cc,*.js,*.h,*.c,*.py,*.szl,*.rules call HighlightTooLongLines(80)
-  au WinEnter,BufNewFile,BufRead *.java call HighlightTooLongLines(100)
-augroup END
+" Color the 81st column for wide lines
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
 
 " Show whitespace at end of the line
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
