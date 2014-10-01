@@ -6,7 +6,10 @@
 set textwidth=80
 
 " I don't like indenting after the parenthesis, this removes it.
-setlocal cinoptions+=W2s
+set cinoptions+=W2s
+
+" Don't indent left when I type a colon.
+set cinoptions+=L0
 
 " Force to tabs, everything N spaces.
 set tabstop=2           " use n columns to represent tab
