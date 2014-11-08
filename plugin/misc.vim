@@ -25,7 +25,7 @@ set clipboard=unnamedplus
 set guioptions+=a
 
 " Inconsolata font
-set gfn=Inconsolata\ Medium\ 12
+set gfn=Inconsolata\ For\ Powerline\ Medium\ 12
 
 " Font for presentations
 "set gfn=Inconsolata\ Bold\ 16
