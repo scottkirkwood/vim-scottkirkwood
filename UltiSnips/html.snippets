@@ -1,0 +1,50 @@
+# html files.
+snippet golink
+<a href="https://goto.corp.google.com/$1">go/$1</a>
+endsnippet
+
+snippet test "Polymer"
+<html>
+  <head>
+    <script src='../webcomponentsjs/webcomponents-lite.js'></script>
+    <script src='../web-component-tester/browser.js'></script>
+    <link rel='import' href='$1.html'>
+  </head>
+  <body>
+    <$1 id="$1"></$1>
+  </body>
+  <script>
+   'use strict';
+
+    suite('<$1>', function() {
+      test('test1', function() {
+			
+      });
+    });
+  </script>
+</html>
+endsnippet
+
+snippet polymer
+<--
+$1 is a component that.
+-->
+
+<link href="../polymer/polymer.html" rel="import">
+
+<dom-module id="$1">
+  <template>
+    <style>
+    </style>
+    <div>
+    </div>
+  </template>
+  <script>
+    Polymer({
+      is: '$1',
+      properties: {
+      },
+    });
+  </script>
+</dom-module>
+endsnippet

@@ -1,0 +1,17 @@
+# snippets for Go files.
+
+snippet tests "Tests loop"
+tests := []struct {
+		in   string
+		want string
+}{
+	{"", ""},
+}
+for _, test := range tests {
+	got := ${1:fun}(test.in)
+	if got != test.want {
+		t.Errorf("$1(%v) = %v, want %v", test.in, got, test.want)
+	}
+}
+endsnippet
+
