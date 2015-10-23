@@ -2,6 +2,17 @@
 "    GUI Related
 " -----------------------------
 
+if has('gui_running')
+  " Right click shows a menu
+  set mousemodel=popup
+  set nomousehide
+else
+  " something for console Vim
+
+  " Turn of paren matching
+  let loaded_matchparen = 1
+endif
+
 " Highlight as you search
 set hlsearch
 
@@ -11,10 +22,6 @@ set hlsearch
 
 " Color syntax highlighting on
 syntax on
-
-" Right click shows a menu
-set mousemodel=popup
-set nomousehide
 
 " Remove left right scrollbars, scrollbars
 set guioptions-=LRlr

@@ -23,3 +23,30 @@ snippet prettyprint "Prettyprint Markdown"
 $0
 </pre>
 endsnippet
+
+snippet polymerbuild
+package(default_visibility = ["//contentads/adx/tools/adspostmortem:__subpackages__"])
+
+load("/third_party/javascript/polymer/build_defs/build_defs", "wct_test_suite", "webcomponent_library")
+subinclude("//contentads/adx/tools/adspostmortem/www/build_defs")
+
+webcomponent_library(
+    name = "lib",
+    srcs = ["$1.html"],
+    destdir = "$1",
+    deps = [
+        POLYMER + "polymer:lib",
+    ],
+)
+
+wct_test_suite(
+    name = "test",
+    srcs = ["$1_test.html"],
+    browsers = REQUIEM_TEST_BROWSERS,
+    destdir = "$1",
+    deps = [
+        ":lib",
+        "//third_party/javascript/polymer/v1/webcomponentsjs:lib",
+    ],
+)
+endsnippet
