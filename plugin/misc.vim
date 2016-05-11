@@ -68,3 +68,8 @@ let g:ycm_confirm_extra_conf = 0
 
 " DIFF
 
+" Decrease message size
+set shortmess=a
+
+" Increase command height size for messages.
+set cmdheight=2
