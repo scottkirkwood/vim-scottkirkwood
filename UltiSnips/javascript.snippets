@@ -1,0 +1,55 @@
+snippet test "Polymer Test"
+goog.module('origintrials.components.$2Test');
+goog.setTestOnly();
+
+suite('$1 tests', () => {
+  let component;
+
+  setup(function() {
+    component = fixture('main');
+    expect(component);
+  });
+
+  test('component integrity', () => {
+    assert.isTrue(Polymer.isInstance(component));
+  });
+});
+endsnippet
+
+snippet component "Polymer Component"
+/**
+ * <$1> Origin Trials main app.
+ */
+Polymer({
+  is: '$1',
+  properties: {
+    foo: {
+      type: String,
+      value: '',
+      readOnly: true,
+      notify: true,
+    },
+  },
+ 
+  listeners: {
+    'tap': 'tapFunction_',
+  },
+
+  created: function() {
+  },
+
+  ready: function() {
+  },
+
+  handleTap: function(event) {
+  }
+});
+endsnippet
+
+snippet author "Author"
+@author scottkirkwood@google.com (Scott Kirkwood)
+endsnippet
+
+snippet log "log"
+console.log('$1');
+endsnippet
